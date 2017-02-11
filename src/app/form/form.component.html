@@ -1,0 +1,15 @@
+<div class="form-container">
+  <h2>Send us a message</h2>
+  <div class="form-group">
+    <label class="form-label">Comment</label>
+    <input type="text" class="form-control" [attr.placeholder] = "placeholder" [(ngModel)]="username"/>
+  </div>
+  <p>Hello {{ username }}. plase send us a message!</p>
+  <div class="form-group">
+    <label class="form-label">Comment</label>
+    <textarea class="form-control" ref-textarea [(ngModel)]="textValue" rows="4"></textarea><br/>
+    <p>Text:({{textValue}})</p>
+  </div>
+  <button (click)="logText(textarea.value)">Adauga un mesaj</button>
+</div>
+<pre>{{log}}</pre>
