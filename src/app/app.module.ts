@@ -13,6 +13,8 @@ import { TableComponent } from './table/table.component';
 import { ContactComponent } from './contact/contact.component';
 import { FormComponent } from './form/form.component';
 import { CalendarModule } from 'primeng/primeng';
+import { HighlightDirective } from './directives/highlight.directive';
+import { HideShowDirective } from './directives/hide-show.directive';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { CalendarModule } from 'primeng/primeng';
     ArticlesComponent,
     TableComponent,
     ContactComponent,
-    FormComponent
+    FormComponent,
+    HighlightDirective,
+    HideShowDirective
   ],
   imports: [
     BrowserModule,
